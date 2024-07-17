@@ -1,9 +1,8 @@
-"use client"; // This marks the component as a Client Component
+"use client"; 
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-// Fetch data from the API
 const getData = async (id) => {
   try {
     const request = await fetch(`https://dummyjson.com/recipes/${id}`);
@@ -15,12 +14,12 @@ const getData = async (id) => {
   }
 };
 
-// Fetch related recipes
+
 const getRelatedRecipes = async () => {
   try {
     const request = await fetch("https://dummyjson.com/recipes");
     const data = await request.json();
-    return data.recipes.slice(0, 3); // Get the first 3 recipes
+    return data.recipes.slice(0, 3);
   } catch (error) {
     console.error("Failed to fetch related recipes:", error);
     return [];
