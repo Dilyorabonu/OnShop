@@ -2,47 +2,66 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="p-8 bg-base-100 min-h-screen">
-      <h1 className="text-5xl font-bold mb-8 text-center text-indigo-600">
-        Contact Us
-      </h1>
-      <form className="space-y-4 p-6 bg-base rounded-lg">
-        <div className="form-control">
-          <label htmlFor="name" className="label">
-            <span className="label-text">Name</span>
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="input input-bordered"
-          />
+    <div className="text-white min-h-screen flex flex-col">
+      <header className="py-10 text-center">
+        <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      </header>
+      <section className="flex-grow py-10 px-4 md:px-8">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
+          <p className="mb-8">
+            If you have any questions, feedback, or suggestions, we'd love to
+            hear from you!
+          </p>
+          <form>
+            <div className="mb-6">
+              <label htmlFor="name" className="block text-lg font-medium mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+            <div className="mb-6">
+              <label htmlFor="email" className="block text-lg font-medium mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="message"
+                className="block text-lg font-medium mb-2"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                rows="5"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full p-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold text-lg"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="form-control">
-          <label htmlFor="email" className="label">
-            <span className="label-text">Email</span>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="input input-bordered"
-          />
-        </div>
-        <div className="form-control">
-          <label htmlFor="message" className="label">
-            <span className="label-text">Message</span>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            className="textarea textarea-bordered"
-          ></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Send
-        </button>
-      </form>
+      </section>
     </div>
   );
 }
