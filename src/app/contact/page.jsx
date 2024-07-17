@@ -6,7 +6,7 @@ function Contact() {
       <header className="py-10 text-center">
         <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
       </header>
-      <section className="flex-grow py-10 px-4 md:px-8">
+      {/* <section className="flex-grow py-10 px-4 md:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
           <test className="mb-8">
@@ -61,7 +61,7 @@ function Contact() {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
