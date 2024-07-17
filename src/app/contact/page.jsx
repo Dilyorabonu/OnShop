@@ -9,10 +9,10 @@ function Contact() {
       <section className="flex-grow py-10 px-4 md:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
-          <p className="mb-8">
+          <test className="mb-8">
             If you have any questions, feedback, or suggestions, we'd love to
             hear from you!
-          </p>
+          </test>
           <form>
             <div className="mb-6">
               <label htmlFor="name" className="block text-lg font-medium mb-2">
