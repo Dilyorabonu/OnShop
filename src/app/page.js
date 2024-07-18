@@ -17,7 +17,7 @@ function Home() {
           <div className="grid gap-8 md:grid-cols-3 px-4 md:px-8">
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <img
-                src="/path-to-image"
+                src=""
                 alt="Classic Margherita Pizza"
                 className="rounded-lg mb-4"
               />
@@ -28,7 +28,7 @@ function Home() {
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <img
-                src="/path-to-image"
+                src=""
                 alt="Vegetarian Stir-Fry"
                 className="rounded-lg mb-4"
               />
@@ -37,7 +37,7 @@ function Home() {
             </div>
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <img
-                src="/path-to-image"
+                src=""
                 alt="Chocolate Chip Cookies"
                 className="rounded-lg mb-4"
               />
